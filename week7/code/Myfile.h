@@ -1,0 +1,9 @@
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
+void NewFile();
+void WriteFile();
+void ChangeFileRoot();
+void ReadFile();
+void AboutFileRoot();
