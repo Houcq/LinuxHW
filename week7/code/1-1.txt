@@ -1,0 +1,3 @@
+Write to stdout
+printf
+printf
