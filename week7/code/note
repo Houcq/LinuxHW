@@ -1,0 +1,4 @@
+rlk@ubuntu:code$ gcc -c Myfile.c
+rlk@ubuntu:code$ ar -rc libMyfile.a Myfile.o
+rlk@ubuntu:code$ gcc main.c -o staticmain -L./ -lMyfile -I./
+

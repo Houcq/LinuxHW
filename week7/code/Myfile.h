@@ -7,3 +7,4 @@ void WriteFile();
 void ChangeFileRoot();
 void ReadFile();
 void AboutFileRoot();
+void Main();

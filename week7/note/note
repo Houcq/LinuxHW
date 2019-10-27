@@ -1,0 +1,15 @@
+rlk@ubuntu:code$ gcc -shared -fPIC -o Myfilelib.so Myfile.c
+rlk@ubuntu:code$ gcc -o libmain main.c ./Myfilelib.so
+这两个命令可以本地生成和调用动态库文件
+远程调用动态库文件
+rlk@ubuntu:code$ gcc -o libmain main.c ../dylib/Myfilelib.so -I../dylib      //-I后面带有的是动态库头文件的路径
+
+生成静态库文件的代码：
+rlk@ubuntu:code$ gcc -c Myfile.c
+rlk@ubuntu:code$ ar -rc libMyfile.a Myfile.o
+rlk@ubuntu:code$ gcc main.c -o staticmain -L./ -lMyfile -I./                //-L后面要写静态库文件路径
+
+
+
+
+
